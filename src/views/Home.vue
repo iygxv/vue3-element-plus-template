@@ -1,10 +1,7 @@
-<script setup lang="ts">
-</script>
- 
+<script setup lang="ts"></script>
+
 <template>
-  <div class="home-container">
-    Home 组件
-  </div>
+  <div class="home-container">Home 组件</div>
   <el-row>
     <el-button>Default</el-button>
     <el-button type="primary">Primary</el-button>
@@ -13,11 +10,9 @@
     <el-button type="warning">Warning</el-button>
     <el-button type="danger">Danger</el-button>
   </el-row>
-  
-
 </template>
 
-<style lang = "scss" scoped>
+<style lang="scss" scoped>
 .home-container {
   color: $skyblue;
 }

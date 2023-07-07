@@ -1,9 +1,5 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
-<template>
- 全局组件
-</template>
+<template>全局组件</template>
 
-<style scoped>
-</style>
+<style scoped></style>

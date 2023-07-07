@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\""
   },
   "dependencies": {
     "@types/node": "^20.4.0",
     "axios": "^1.4.0",
     "element-plus": "^2.3.7",
+    "eslint": "^8.44.0",
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.1.0",
     "qs": "^6.11.2",
@@ -20,7 +23,13 @@
   },
   "devDependencies": {
     "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.15.1",
+    "prettier": "^3.0.0",
     "sass": "^1.63.6",
     "typescript": "^5.0.2",
     "unplugin-auto-import": "^0.16.6",

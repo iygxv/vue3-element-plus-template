@@ -1,9 +1,14 @@
-import type { AxiosInstance, InternalAxiosRequestConfig, AxiosRequestHeaders, AxiosError, AxiosResponse } from 'axios'
+import type {
+  AxiosInstance,
+  InternalAxiosRequestConfig,
+  AxiosRequestHeaders,
+  AxiosError,
+  AxiosResponse
+} from 'axios'
 import type { AxiosOptions } from '#/axios'
 import axios from 'axios'
 import qs from 'qs'
 import { ElMessage } from 'element-plus'
-
 
 const service: AxiosInstance = axios.create({
   baseURL: import.meta.env.VITE_APP_BASE_API,
@@ -49,7 +54,6 @@ service.interceptors.response.use(
  */
 function request(option: AxiosOptions) {
   return new Promise((resolve, reject) => {
-
     let config: any = {
       method: option?.method || '',
       url: option?.url || '',
